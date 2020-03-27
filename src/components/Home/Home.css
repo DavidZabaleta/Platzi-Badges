@@ -1,0 +1,40 @@
+.Home {
+    background-image: url('../../images/stars.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1B1B25;
+    width: 100vw;
+    overflow: hidden;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home__description {
+    margin-right: 4rem;
+}
+
+.Home__description #platziconf-logo {
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.Home__description--text {
+    color: white;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Home__complement #astronauts {
+    width: 600px;
+}
+
+.Home__description--text > .btn {
+    align-self: flex-end;
+}
+
+
+

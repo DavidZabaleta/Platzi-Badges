@@ -6,7 +6,7 @@ import twitterLogo from '../../images/twitter.svg';
 export default class BadgeList extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <ul className="list-unstyled">
                     {this.props.badges.map((badge) => {
                         return (
@@ -24,7 +24,7 @@ export default class BadgeList extends Component {
                         );
                     })}
                 </ul>
-            </div>
+            </React.Fragment>
         )
     }
 }
