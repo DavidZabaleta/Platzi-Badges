@@ -1,22 +1,17 @@
 import React from 'react';
 
+import PageError from '../../components/PageError/PageError';
+
 class BadgeForm extends React.Component {
 
     handleClick = (e) => {
         console.log("clickeado");
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault();
-
-        console.log(this.state);
-    }
-
     render() {
         return (
             <React.Fragment>
-                <h1>Nuevo Participante</h1>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.props.onSubmit}>
                     <div className="form-group">
                         <label>Primer Nombre</label>
                         <input
@@ -65,6 +60,11 @@ class BadgeForm extends React.Component {
                     <button
                         onClick={this.handleClick}
                         className="btn btn-primary">Guardar</button>
+
+                    {this.props.error && (
+                        <p className="text-danger"><br/>500: Error del servidor. No eres tu somos nosotros <span>😢</span></p>
+                    )}
+
                 </form>
             </React.Fragment>
         )
