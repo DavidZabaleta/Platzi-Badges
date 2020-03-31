@@ -1,0 +1,35 @@
+.BadgeList__item {
+    background-color: #fff;
+    width: 580px;
+    height: 101px;
+    box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.16);
+    margin-bottom: 1rem;
+}
+
+.BadgeList__item--info {
+    margin: auto 0;
+}
+
+.BadgeList__item--info h4, .BadgeList__item--info p {
+    margin: 0;
+}
+
+.BadgeList__item--avatar {
+    height: 60px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 0 1rem;
+}
+
+.BadgeList__item--social {
+    margin: 0.25rem 0;
+}
+
+.BadgeList__twitter--logo {
+    width: 18px;
+    margin-right: 0.25rem;
+}
+
+.BadgeList__twitter--user {
+    color: #03a9f4;
+}
